@@ -1,35 +1,623 @@
 {
-  "items": [
+  "schemaVersion": 2,
+  "vats": [
     {
+      "code": "一号缸",
+      "capacity": 1
+    },
+    {
+      "code": "二号缸",
+      "capacity": 1
+    },
+    {
+      "code": "三号缸",
+      "capacity": 1
+    },
+    {
+      "code": "四号缸",
+      "capacity": 1
+    }
+  ],
+  "batches": [
+    {
+      "id": "PF-001",
       "code": "PF-001",
       "source": "构树皮",
-      "vat": "三号缸",
-      "days": 6,
       "owner": "林素",
-      "status": "发酵中",
-      "logs": [
+      "createdAt": "2026-06-15",
+      "migrated": true,
+      "legacy": {
+        "days": 6,
+        "status": "发酵中"
+      },
+      "events": [
         {
+          "type": "batch.created",
           "at": "2026-06-15",
-          "step": "观察",
-          "note": "温度24.6，气味微酸，纤维开始松散",
-          "abnormal": false
+          "data": {
+            "code": "PF-001",
+            "source": "构树皮",
+            "vat": "三号缸",
+            "owner": "林素"
+          },
+          "migrated": true
         },
         {
+          "type": "observation",
+          "at": "2026-06-15",
+          "serial": "PF-001-mig-log-2",
+          "data": {
+            "note": "温度24.6，气味微酸，纤维开始松散",
+            "abnormal": false,
+            "temperature": "",
+            "smell": "",
+            "fiber": "",
+            "changedWater": ""
+          },
+          "migrated": true
+        },
+        {
+          "type": "observation",
           "at": "2026-06-21T03:50:29.658Z",
-          "step": "观察",
-          "note": "温度25.1，微酸，松散"
+          "serial": "PF-001-mig-obs-1",
+          "data": {
+            "temperature": "25.1",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          },
+          "migrated": true
+        },
+        {
+          "type": "observation",
+          "at": "2026-06-22T08:00:00.000Z",
+          "serial": "YP-20261004-白班-0001",
+          "data": {
+            "temperature": "25.3",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-06-16T08:00:00.000Z",
+          "serial": "YP-20261004-白班-0002",
+          "data": {
+            "temperature": "24.8",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
         }
       ],
+      "vat": "三号缸",
+      "days": 4,
+      "abnormal": false,
       "observations": [
         {
-          "at": "2026-06-21T03:50:29.658Z",
+          "note": "温度24.6，气味微酸，纤维开始松散",
+          "abnormal": false,
+          "temperature": "",
+          "smell": "",
+          "fiber": "",
+          "changedWater": "",
+          "serial": "PF-001-mig-log-2",
+          "at": "2026-06-15"
+        },
+        {
+          "temperature": "24.8",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "YP-20261004-白班-0002",
+          "at": "2026-06-16T08:00:00.000Z"
+        },
+        {
           "temperature": "25.1",
           "smell": "微酸",
           "fiber": "松散",
           "changedWater": "是",
-          "abnormal": false
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-001-mig-obs-1",
+          "at": "2026-06-21T03:50:29.658Z"
+        },
+        {
+          "temperature": "25.3",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "YP-20261004-白班-0001",
+          "at": "2026-06-22T08:00:00.000Z"
         }
-      ]
+      ],
+      "conflicts": [],
+      "complete": true,
+      "blocked": false,
+      "status": "发酵中",
+      "ready": false
+    },
+    {
+      "id": "PF-1791137650428",
+      "code": "PF-002",
+      "source": "桑树皮",
+      "owner": "林素",
+      "createdAt": "2026-10-04T18:14:10.428Z",
+      "events": [
+        {
+          "type": "batch.created",
+          "at": "2026-10-04T18:14:10.428Z",
+          "data": {
+            "code": "PF-002",
+            "source": "桑树皮",
+            "vat": "一号缸",
+            "owner": "林素"
+          }
+        },
+        {
+          "type": "vat.changed",
+          "at": "2026-10-04T18:14:10.486Z",
+          "serial": "chg-001",
+          "data": {
+            "from": "一号缸",
+            "to": "四号缸"
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-002-obs-1",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-002-obs-2",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-002-obs-3",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-002-obs-4",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-002-obs-5",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": true,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-002-obs-6",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-002-obs-7",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation.corrected",
+          "at": "2026-10-04T18:18:45.739Z",
+          "serial": "PF-002-obs-5",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation.corrected",
+          "at": "2026-10-04T18:18:45.768Z",
+          "serial": "PF-002-obs-5",
+          "data": {
+            "temperature": "26",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation.corrected",
+          "at": "2026-10-04T18:19:13.895Z",
+          "serial": "PF-002-obs-5",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation.corrected",
+          "at": "2026-10-04T18:19:17.548Z",
+          "serial": "PF-002-obs-5",
+          "data": {
+            "temperature": "26",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        }
+      ],
+      "vat": "四号缸",
+      "days": 7,
+      "abnormal": false,
+      "observations": [
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-002-obs-1",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-002-obs-2",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-002-obs-3",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-002-obs-4",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "26",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-002-obs-5",
+          "at": "2026-07-01T00:00:00.000Z",
+          "correctedAt": "2026-10-04T18:19:17.548Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-002-obs-6",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-002-obs-7",
+          "at": "2026-07-01T00:00:00.000Z"
+        }
+      ],
+      "conflicts": [],
+      "complete": true,
+      "blocked": false,
+      "status": "可抄纸",
+      "ready": true
+    },
+    {
+      "id": "PF-1791137650461",
+      "code": "PF-003",
+      "source": "麻树皮",
+      "owner": "陈阿婆",
+      "createdAt": "2026-10-04T18:14:10.461Z",
+      "events": [
+        {
+          "type": "batch.created",
+          "at": "2026-10-04T18:14:10.461Z",
+          "data": {
+            "code": "PF-003",
+            "source": "麻树皮",
+            "vat": "二号缸",
+            "owner": "陈阿婆"
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-003-obs-1",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-003-obs-2",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-003-obs-3",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-003-obs-4",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-003-obs-5",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-003-obs-6",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        },
+        {
+          "type": "observation",
+          "at": "2026-07-01T00:00:00.000Z",
+          "serial": "PF-003-obs-7",
+          "data": {
+            "temperature": "25",
+            "smell": "微酸",
+            "fiber": "松散",
+            "changedWater": "是",
+            "abnormal": false,
+            "note": ""
+          }
+        }
+      ],
+      "vat": "二号缸",
+      "days": 7,
+      "abnormal": false,
+      "observations": [
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-003-obs-1",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-003-obs-2",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-003-obs-3",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-003-obs-4",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-003-obs-5",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-003-obs-6",
+          "at": "2026-07-01T00:00:00.000Z"
+        },
+        {
+          "temperature": "25",
+          "smell": "微酸",
+          "fiber": "松散",
+          "changedWater": "是",
+          "abnormal": false,
+          "note": "",
+          "serial": "PF-003-obs-7",
+          "at": "2026-07-01T00:00:00.000Z"
+        }
+      ],
+      "conflicts": [],
+      "complete": true,
+      "blocked": false,
+      "status": "可抄纸",
+      "ready": true
+    },
+    {
+      "id": "PF-1791137696170",
+      "code": "PF-004",
+      "source": "",
+      "owner": "",
+      "createdAt": "2026-10-04T18:14:56.170Z",
+      "events": [
+        {
+          "type": "batch.created",
+          "at": "2026-10-04T18:14:56.170Z",
+          "data": {
+            "code": "PF-004",
+            "source": "",
+            "vat": "一号缸",
+            "owner": ""
+          }
+        }
+      ],
+      "vat": "一号缸",
+      "days": 0,
+      "abnormal": false,
+      "observations": [],
+      "conflicts": [],
+      "complete": false,
+      "blocked": true,
+      "status": "入缸",
+      "ready": false
     }
-  ]
+  ],
+  "migratedFrom": 1
 }
